@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单属性</title>
+</head>
+<body>
+
+<!--autocomplete刷新之后会有上一次输入提示-->
+<form action="T2.html" autocomplete="on">
+    <input type="text" name="text">
+    <input type="email" name="email" autocomplete="off">
+    <input type="submit">
+</form>
+
+<!--autofocus  input刷新之后自动获取焦点-->
+<form action="T2.html" >
+    <input type="text" name="text" autofocus="autofocus">
+    <input type="email" name="email"  placeholder="我是提示">
+    <input type="submit">
+</form>
+
+<!--multiple规定输入域可以选择多个值-->
+<form action="T2.html" >
+    <input type="file" name="file" multiple="multiple">
+    <input type="email" name="email"  multiple="multiple">
+    <input type="submit">
+</form>
+
+<!--required表单验证：表示必填-->
+<form action="T2.html" >
+    <input type="text" name="text" required="required">
+    <input type="email" name="email" required="required">
+    <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>链接属性</title>
+    <!--size-->
+    <link rel="icon" href="icon.gif" type="image/gif"  sizes="16✖16">
+    <!--target所有的超链接都弹出一个新窗口-->
+    <base href="http://localhost/" target="_blank">
+
+    <script type="text/javascript">
+        window.document.write('内部引入js');
+    </script>
+
+    <script type="text/javascript" src="#.js"></script>
+    <!--defer整个页面加载完毕之后加载-->
+    <script defer="defer" type="text/javascript" src="#.js"></script>
+    <!--async加载js的同时，不影响后面内容的加载-->
+    <script async="async" type="text/javascript" src="#.js"></script>
+
+</head>
+<body>
+
+</body>
+</html>
