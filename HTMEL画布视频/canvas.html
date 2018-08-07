@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding: 0;
+            border: none;
+        }
+        canvas{
+            /*利用绝对定位实现水平上下居中：此时参照的是浏览器*/
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            display: block;
+            margin: auto;
+            background: #abcdef;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function () {
+            var canvas=document.getElementById('canvas');//获取画布
+            var context=canvas.getContext('2d');//设置绘图环境
+
+            context.moveTo(100,100);//起始点
+            context.lineTo(200,200);//线的终点
+
+            context.stroke();//开始画
+        }
+    </script>
+</head>
+<body>
+<canvas id="canvas" width="1024" height="768">
+    如果有来生，要化成一阵风，
+    一瞬间也能成为永恒。
+    没有善感的情怀，没有多情的眼睛。
+</canvas>
+
+</body>
+</html>
