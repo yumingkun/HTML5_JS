@@ -6,12 +6,43 @@
 </head>
 <body>
 
-<!--状态标签：实时显示，气压温度-->
-<meter value="220" min="20" max="280"     low="200" high="240" optimum="220"></meter>
-<meter value="0.75" >75%</meter>
+<!--&lt;!&ndash;状态标签：实时显示，气压温度&ndash;&gt;-->
+<!--<meter value="220" min="20" max="280"     low="200" high="240" optimum="220"></meter>-->
+<!--<meter value="0.75" >75%</meter>-->
+<!--&lt;!&ndash;状态标签：任务过程，安装加载&ndash;&gt;-->
+<!--<progress value="30" max="100" />-->
 
-<!--状态标签：任务过程，安装加载-->
-<progress value="30" max="100" />
+
+<hr>
+
+<!--列表标签：为input标记定义一个下拉列表，配合option-->
+<input placeholder="请选择" list="yuList">
+<datalist id="yuList">
+    <option value="yu1">yu1</option>
+    <option value="yu2">yu2</option>
+    <option value="yu3">yu3</option>
+    <option value="yu4">yu4</option>
+</datalist>
+<!--列表标签：标记定义一个元素的详细内容，配合summary-->
+<details open="open">
+    <summary>如果有来生</summary>
+    <p>
+        如果有来生，要做一棵树，
+        站成永恒。没有悲欢的姿势，
+        一半在尘土里安详，
+        一半在风里飞扬；
+        一半洒落荫凉，
+        一半沐浴阳光。
+        非常沉默、非常骄傲。
+        从不依靠、从不寻找。
+        如果有来生，要化成一阵风，
+        一瞬间也能成为永恒。
+        没有善感的情怀，没有多情的眼睛。
+    </p>
+</details>
+
+
+
 
 </body>
 </html>
