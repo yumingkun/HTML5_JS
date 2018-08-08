@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡时间</title>
+    <style type="text/css">
+        *{
+            background-color: #abcdef;
+        }
+        div{
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+            background: url("images/imooc.png") no-repeat center center,url("images/circle_outer.png");
+            /*双层背景*/
+
+            transform: rotate(0deg);
+            /*变形角度*/
+
+            transition-duration: 2s;
+            /*过渡时间*/
+        }
+        div:hover{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

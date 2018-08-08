@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body { background: #abcdef; }
+        div { position: relative; width: 760px; height: 760px; margin: auto;
+
+            /*使子元素保留3D效果：穿透效果*/
+            transform-style: preserve-3d;
+
+        }
+        div > .inner { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; margin: auto;
+            background: url(images/circle_inner.png) no-repeat center center;
+
+            /*动画名字*/
+            animation-name: circle_inner;
+            /*设置动画时间*/
+            animation-duration: 10s;
+            /*设置动画循环次数为无限次*/
+            /*animation-iteration-count: infinite;*/
+            /*设置动画在循环中的方向*/
+            /*animation-direction: reverse;*/
+            /*设置动画是否运行*/
+            animation-play-state: paused;
+
+        }
+        div > .middle { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; margin: auto;
+            background: url(images/circle_middle.png) no-repeat center center;
+
+            /*动画名字*/
+            animation-name: circle_middle;
+            /*设置动画时间*/
+            animation-duration: 10s;
+            /*设置动画是否运行*/
+            animation-play-state: paused;
+        }
+        div > .outer { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; margin: auto;
+            background: url(images/circle_outer.png) no-repeat center center;
+
+            /*动画名字*/
+            animation-name: circle_outer;
+            /*设置动画时间*/
+            animation-duration: 10s;
+            /*设置动画是否运行*/
+            animation-play-state: paused;
+        }
+        div > .mac { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; margin: auto;
+            background: url( images/imooc.png) no-repeat center center;
+        }
+
+        div:hover > div{
+            /*设置动画运行状态为运行*/
+            animation-play-state: running;
+        }
+
+        /*定义动画 */
+        @keyframes circle_inner {
+            from {transform: rotateY(0deg)}
+            to {transform: rotateY(360deg)}
+        }
+        @keyframes circle_middle {
+            from {transform: rotateX(0deg)}
+            to {transform: rotateX(360deg)}
+        }
+        @keyframes circle_outer {
+            from {transform: rotate(0deg)}
+            to {transform: rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <div class="inner"></div>
+    <div class="middle"></div>
+    <div class="outer"></div>
+    <div class="mac"></div>
+</div>
+
+
+</body>
+</html>
